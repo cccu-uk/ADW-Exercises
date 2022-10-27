@@ -7,8 +7,8 @@ src = "content"
 
 [output.html]
 mathjax-support = true
-git-repository-url = "https://github.com/cccu-uk/ADW_Labs/"
-edit-url-template = "https://github.com/cccu-uk/ADW_Labs/edit/master/{path}"
+git-repository-url = "https://github.com/cccu-uk/ADW-Exercises/"
+edit-url-template = "https://github.com/cccu-uk/ADW-Exercises/edit/master/{path}"
 
 [output.html.print]
 enable = false 
