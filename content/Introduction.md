@@ -7,14 +7,13 @@ This mdBook will grow over the duration of this module with new labs/workshops a
 <td>
 
 The mdBook accessed outside of blackboard and is mobile and tablet friendly. :
-- [https://cccu-uk.github.io/U10793_FCC_Labs](https://cccu-uk.github.io/U10793_FCC_Labs)
+- [https://cccu-uk.github.io/ADW-Exercises](https://cccu-uk.github.io/ADW-Exercises)
 - Or scan the QR code on the right:
 </td>
 <td>
 
 
-<img src='https://chart.googleapis.com/chart?cht=qr&chl=https%3A%2F%2Fcccu-uk.github.io%2FU10793_FCC_Labs%2F&chs=180x180&choe=UTF-8&chld=L|2' rel='nofollow' alt='qr code'><a href='https://www.qr-code-generator.com' border='0' style='cursor:default'  rel='nofollow' ></a>
-
+<img src='https://chart.googleapis.com/chart?cht=qr&chl=https%3A%2F%2Fcccu-uk.github.io%2FADW-Exercises%2FIntroduction.html&chs=180x180&choe=UTF-8&chld=L|2' alt='qr code'><a href='https://www.qr-code-generator.com' border='0' style='cursor:default'  rel='nofollow'></a>
 </td>
 </tr>
 </table>
