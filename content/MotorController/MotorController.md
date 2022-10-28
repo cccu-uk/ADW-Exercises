@@ -35,46 +35,61 @@ So lets assume that we have a RPM of 1000, and that this needs to be converted t
    </span>
 </p>
 
-
-$$
-\begin{split}
-           RPS = \frac{RPM}{60 seconds/minute} \\ 
-           \Rightarrow 16.67 RPS = \frac{1000}{60}  
-\end{split}\tag{Eqn:1}
-$$
-
 Now we need to convert the RPS to Rad/s,you take RPS and convert to radians by multiplying by 2π, as seen in the **equation 2**:
 
-$$
-\begin{split}     rad/s = RPS \cdot 2\pi  \\ \\ \Rightarrow   104.72 rad/s = 16.67 \cdot 2\pi
-\end{split}\tag{Eqn:2}
-$$
+<p>
+   <span class="math display">
+      \[
+         \begin{aligned}
+            rad/s &amp;= RPS \cdot 2\pi  \\ \\
+            \Rightarrow   104.72 rad/s &amp;= 16.67 \cdot 2\pi
+         \end{aligned}\tag{Eqn:2}
+      \]
+   </span>
+</p>
+
 
 Therefore we can combine **equations 1** and **2** above into one **equation 3** below:
 
-$$
-\begin{split}
-     rad/s = RPM \cdot \frac{2\pi}{60} \\ \\ 104.72 rad/s = 1000 \cdot \frac{2\pi}{60}
-\end{split}\tag{Eqn:3}
-$$
+<p>
+   <span class="math display">
+      \[
+         \begin{aligned}
+            rad/s &amp;= RPM \cdot \frac{2\pi}{60} \\
+            104.72 rad/s &amp;= 1000 \cdot \frac{2\pi}{60}
+         \end{aligned}\tag{Eqn:3}
+      \]
+   </span>
+</p>
 
 Now that we rad/s we can calculate the angular velocity (deg/s). There are two ways to achieve this both methods are shown below in **equations 4** and **5**.
 
-**Equation 4** first takes the approach using the knowledge that 1 rad/s = 57.2958$^{\circ}$ and you have precalulated using **equation 3**.
+**Equation 4** first takes the approach using the knowledge that \\(1 rad/s = 57.2958^{\circ}//) and you have precalulated using **equation 3**.
 
-$$
-\begin{split}
-    deg/s = rad/s \cdot 57.2958^{\circ} \\ \\ \Rightarrow  628.32^{\circ}/s = 104.72 rad/s \cdot 57.2958^{\circ}
-\end{split}\tag{Eqn:4}
-$$
+<p>
+   <span class="math display">
+      \[
+         \begin{aligned}
+            deg/s &amp;= rad/s \cdot 57.2958^{\circ} \\ 
+            \Rightarrow  628.32^{\circ}/s  &amp;= 104.72 rad/s \cdot 57.2958^{\circ}
+         \end{aligned}\tag{Eqn:4}
+      \]
+   </span>
+</p>
 
 **Equation 5** replaces the $2\pi$ with 360 in ***Equation 3**
 
-$$
-\begin{split}
-        deg/s = RPM \cdot \frac{360}{60} \\ \\ 628.32^{\circ}/s = 1000 \cdot \frac{360}{60}
-\end{split}\tag{Eqn:5}
-$$
+
+<p>
+   <span class="math display">
+      \[
+         \begin{aligned}
+            deg/s &amp;= RPM \cdot \frac{360}{60}
+            628.32^{\circ}/s  &amp;= 1000 \cdot \frac{360}{60} 57.2958^{\circ}
+         \end{aligned}\tag{Eqn:5}
+      \]
+   </span>
+</p>
 
 **Questions:**
 
@@ -158,7 +173,7 @@ Placing components (refer to the image below):
 
 13. Similarly take a red wire from **Terminal 2** of the DC motor and connect it to row **20** column **a**
 
-14. Lastly, take the resistor set to 1k$\Omega$, and rotate so that it lies horizontally, and connect **Terminal 1** pin to the row **17** column **c**, inline with L293D **Output 2**, therefore **Terminal 2** of the resistor should be connected to row **21** column **c**
+14. Lastly, take the resistor set to \\(1k\Omega\\), and rotate so that it lies horizontally, and connect **Terminal 1** pin to the row **17** column **c**, inline with L293D **Output 2**, therefore **Terminal 2** of the resistor should be connected to row **21** column **c**
 
 For reference look at the below image for L293D functional block diagram and pin layout.
 
@@ -357,11 +372,18 @@ Starting with line 24, the code `tempValue = analogRead(temp);` will read the TM
 
 Line 25's code, `temperature = ((tempValue*(5.0/1024.0))-0.5)/0.01;}`, converts the the `temp` value, (0 - 358) to Celsius with a range of \\(-40^{\circ}C\\) to \\(125^{\circ}\\C), see **equation 6**.
 
-$$
-\begin{split}
-    temperature = \cfrac{\left(\left(tempValue \cdot \left( \cfrac{5.0V}{1024}\right)\right)-0.5\right)}{0.01}    \\ \\ \Rightarrow 26.17^{\circ}C = \cfrac{\left(\left(156 \cdot \left( \cfrac{5.0V}{1024}\right)\right)-0.5\right)}{0.01} 
-\end{split}\tag{Eqn:6} 
-$$
+ 
+ <p>
+   <span class="math display">
+      \[
+         \begin{aligned}
+            temperature = \cfrac{\left(\left(tempValue \cdot \left( \cfrac{5.0V}{1024}\right)\right)-0.5\right)}{0.01}
+            \Rightarrow 26.17^{\circ}C = \cfrac{\left(\left(156 \cdot \left( \cfrac{5.0V}{1024}\right)\right)-0.5\right)}{0.01} 
+         \end{aligned}\tag{Eqn:6}
+      \]
+   </span>
+</p>
+
 
 
 > TODO: 
