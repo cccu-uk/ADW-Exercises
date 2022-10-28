@@ -24,10 +24,21 @@ period
 
 So lets assume that we have a RPM of 1000, and that this needs to be converted to Rad/s. The two main steps in the conversion are converting RPM to revolutions per second (RPS), then converting total revolutions to the angle covered in radians. The first step is simple: Divide the number in RPM by 60 to find the number of revolutions per second as shown in the **equation 1**:
 
+<p>
+   <span class="math display">
+      \[
+         \begin{aligned}
+            RPS  &amp;= \frac{RPM}{60 seconds/minute}
+            \Rightarrow 16.67 RPS &amp;= \frac{1000}{60} 
+         \end{aligned}\tag{Eqn:1}
+      \]
+   </span>
+</p>
+
+
 $$
 \begin{split}
            RPS = \frac{RPM}{60 seconds/minute}
-           
            \\ \\ \Rightarrow 16.67 RPS = \frac{1000}{60}  
 \end{split}\tag{Eqn:1}
 $$
