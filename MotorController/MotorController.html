@@ -194,7 +194,7 @@ period</li>
    </span>
 </p>
 <p>Now that we rad/s we can calculate the angular velocity (deg/s). There are two ways to achieve this both methods are shown below in <strong>equations 4</strong> and <strong>5</strong>.</p>
-<p><strong>Equation 4</strong> first takes the approach using the knowledge that \(1 rad/s = 57.2958^{\circ}//) and you have precalulated using <strong>equation 3</strong>.</p>
+<p><strong>Equation 4</strong> first takes the approach using the knowledge that \(1 rad/s = 57.2958^{\circ}\) and you have precalulated using <strong>equation 3</strong>.</p>
 <p>
    <span class="math display">
       \[
@@ -205,7 +205,7 @@ period</li>
       \]
    </span>
 </p>
-<p><strong>Equation 5</strong> replaces the $2\pi$ with 360 in *<strong>Equation 3</strong></p>
+<p><strong>Equation 5</strong> replaces the \(2\pi\) with 360 in *<strong>Equation 3</strong></p>
 <p>
    <span class="math display">
       \[
@@ -449,7 +449,7 @@ void loop()
 }
 </code></pre>
 <p>Starting with line 24, the code <code>tempValue = analogRead(temp);</code> will read the TMP36 wired to pin A0 of the Arduino, and convert voltage to the Analogue Digital Converted value. Remember the that voltage rang is 0V to 5V and the ADC of the Arduino is 10-bits, so its range is 0 - 1023.</p>
-<p>Line 25's code, <code>temperature = ((tempValue*(5.0/1024.0))-0.5)/0.01;}</code>, converts the the <code>temp</code> value, (0 - 358) to Celsius with a range of \(-40^{\circ}C\) to \(125^{\circ}\C), see <strong>equation 6</strong>.</p>
+<p>Line 25's code, <code>temperature = ((tempValue*(5.0/1024.0))-0.5)/0.01;}</code>, converts the the <code>temp</code> value, (0 - 358) to Celsius with a range of \(-40^{\circ}C\) to \(125^{\circ}C\), see <strong>equation 6</strong>.</p>
 <p>
    <span class="math display">
       \[
