@@ -84,7 +84,7 @@ Now that we rad/s we can calculate the angular velocity (deg/s). There are two w
    <span class="math display">
       \[
          \begin{aligned}
-            deg/s &amp;= RPM \cdot \frac{360}{60}
+            deg/s &amp;= RPM \cdot \frac{360}{60} \\
             628.32^{\circ}/s  &amp;= 1000 \cdot \frac{360}{60} 57.2958^{\circ}
          \end{aligned}\tag{Eqn:5}
       \]
@@ -377,7 +377,7 @@ Line 25's code, `temperature = ((tempValue*(5.0/1024.0))-0.5)/0.01;}`, converts 
    <span class="math display">
       \[
          \begin{aligned}
-            temperature = \cfrac{\left(\left(tempValue \cdot \left( \cfrac{5.0V}{1024}\right)\right)-0.5\right)}{0.01}
+            temperature = \cfrac{\left(\left(tempValue \cdot \left( \cfrac{5.0V}{1024}\right)\right)-0.5\right)}{0.01}\\ 
             \Rightarrow 26.17^{\circ}C = \cfrac{\left(\left(156 \cdot \left( \cfrac{5.0V}{1024}\right)\right)-0.5\right)}{0.01} 
          \end{aligned}\tag{Eqn:6}
       \]
