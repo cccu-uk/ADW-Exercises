@@ -89,7 +89,7 @@ Alternatively you can achieve the same result this way too:
 
 \\[ [(1) \cdot 2^{7}] + [(1) \cdot 2^{6}] + [(0) \cdot 2^{5}] + [(1) \cdot 2^{4}] + [(1) \cdot 2^{3}] + [(0) \cdot 2^{2}] + [(1) \cdot 2^{1}] + [(1) \cdot 2^{0}] \\]
 
-\\[ [1 \cdot 128] +[1 \cdot 64] + [0 x 32] + [1 \cdot 16]  + [1 x 8] +[0 \cdot 4] + [1 \cdot 2] + [1 × 1]  \\]
+\\[ [1 \cdot 128] +[1 \cdot 64] + [0 \cdot 32] + [1 \cdot 16]  + [1 \cdot 8] +[0 \cdot 4] + [1 \cdot 2] + [1 \cdot 1]  \\]
 
 \\[ 219 = 128+64+16+8+2+1\\]
 
